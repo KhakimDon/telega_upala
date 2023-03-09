@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="text">
+      Далеко-далеко за словесными горами в стране гласных и согласных живут
+      рыбные тексты. Возвращайся скатился безорфографичный эта заголовок
+      последний, на берегу дал грустный свой точках сбить. Своего языком, сбить
+      бросил алфавит проектах послушавшись вопроса, домах вопрос
+      парадигматическая возвращайся рыбного страну щеке первую! Переулка однажды
+      она единственное переписали? Толку власти возвращайся снова жаренные
+      вопрос, он грустный свою большой. Текстами единственное алфавит
+      парадигматическая. Использовало, она точках ручеек грамматики
+      парадигматическая власти сих жизни семь раз выйти родного, прямо снова
+      коварный его дорогу, обеспечивает безорфографичный злых! Вопроса несколько
+      за если о назад переписали использовало одна себя, коварных это осталось
+      безопасную! Запятых правилами рукопись гор взгляд продолжил всемогущая
+      последний?
+    </h1>
+    <a href="#">Link</a>
+    <div class="image">
+      <img
+        src="https://images.unsplash.com/photo-1678305354467-d89174c7e440?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="images"
+      />
+    </div>
+
+    <style>
+        /* :any-link{
+            text-decoration: none;
+            font-family: arial;
+            color: black;
+        } */
+        /* @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap'); */
+        
+        @font-face {
+            font-family: html;
+            src: url('./assets/fonts/RubikIso-Regular.ttf');
+        }
+      .text {
+        /* text-shadow: 0 0 20px blue; */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: blue;
+        color: transparent;
+
+        /* color: red; */
+        /* font-family: arial; */
+        /* user-select: all; */
+        
+      }
+      .text::selection{
+        background: red;
+        -webkit-text-stroke-color: white;
+      }
+      .image {
+        overflow: hidden;
+        width: max-content;
+        position: relative;
+        height: max-content;
+      }
+      img {
+        transition-duration: 0.3s;
+        height: 100px;
+        /* position: relative; */
+        /* filter: blur(0.3px) grayscale(1); */
+      }
+      .image::after {
+        content: "";
+        top: 0;
+        transition-duration: 0.4s;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        background: rgba(0, 0, 0, 0.287);
+        backdrop-filter: blur(1px);
+        opacity: 90%;
+      }
+      .image:hover::after {
+        top: -100%;
+      }
+      /* img:hover{
+            filter: blur(0) grayscale(0);
+        } */
+    </style>
+    <script src="./codewars.js"></script>
+  </body>
+</html>
